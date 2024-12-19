@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin Analysis Tool</title>
+<link rel="stylesheet" href="THT8.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bitcoin Analysis Tool</h1>
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate">
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate">
+    <button id="analyzeBtn">Analyze</button>
+    <div class="results">
+      <div id="longestTrend" class="result-item"></div>
+      <div id="highestVolume" class="result-item"></div>
+      <div id="bestTrade" class="result-item"></div>
+    </div>
+  </div>
+  <script src="THT8.js"></script>
+</body>
+</html>

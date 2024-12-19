@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #333;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.left-button, .right-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-button {
+    left: 10px;
+}
+
+.right-button {
+    right: 10px;
+}
+
+#pokemonName, #pokemonNumber, #pokemonTypes, #pokemonWeight, #pokemonHeight, #pokemonAbilities {
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+img {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.play-button {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.play-button:hover {
+    background-color: #0056b3;
+}
+
+.ability {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.ability:hover {
+    color: #0056b3;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}

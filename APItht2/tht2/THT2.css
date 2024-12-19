@@ -1,0 +1,41 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    margin-top: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+select, button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#imageContainer {
+    margin-top: 20px;
+}
+
+#dogImage {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

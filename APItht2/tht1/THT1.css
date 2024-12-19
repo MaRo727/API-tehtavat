@@ -1,0 +1,82 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite; /* Smooth gradient animation */
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Container styling for center alignment */
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Button styling */
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+    width: 200px;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:active {
+    background-color: #1c6382;
+    transform: translateY(2px); /* Pressed effect */
+}
+
+/* Text styling */
+p {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Fact and Breed Output styling */
+#FactOutput, #BreedOutput {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}

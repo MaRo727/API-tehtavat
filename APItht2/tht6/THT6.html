@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Fetcher</title>
+    <link rel="stylesheet" href="THT6.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Anime Fetcher</h1>
+        <form id="animeForm">
+            <label for="animeName">Enter Anime Name (optional):</label>
+            <input type="text" id="animeName" name="animeName">
+
+            <div class="dropdown-container">
+                <div class="dropdown-item">
+                    <label for="genre">Genre:</label>
+                    <select id="genre" name="genre">
+                        <option value="">Any</option>
+                        <option value="tv">TV</option>
+                        <option value="movie">Movie</option>
+                        <option value="ova">OVA</option>
+                        <option value="special">Special</option>
+                        <option value="ona">ONA</option>
+                        <option value="music">Music</option>
+                        <option value="cm">CM</option>
+                        <option value="pv">PV</option>
+                        <option value="tv_special">TV Special</option>
+                    </select>
+                </div>
+
+                <div class="dropdown-item">
+                    <label for="status">Status:</label>
+                    <select id="status" name="status">
+                        <option value="">Any</option>
+                        <option value="airing">Airing</option>
+                        <option value="complete">Complete</option>
+                        <option value="upcoming">Upcoming</option>
+                    </select>
+                </div>
+
+                <div class="dropdown-item">
+                    <label for="ageRating">Age Rating:</label>
+                    <select id="ageRating" name="ageRating">
+                        <option value="">Any</option>
+                        <option value="g">G</option>
+                        <option value="pg">PG</option>
+                        <option value="pg13">PG-13</option>
+                        <option value="r17">R-17</option>
+                        <option value="r">R</option>
+                        <option value="rx">Rx</option>
+                    </select>
+                </div>
+
+                <div class="dropdown-item">
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating">
+                        <option value="">Any</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit">Fetch Anime</button>
+        </form>
+        <button id="randomAnimeButton">Get Random Anime</button>
+        <div id="animeData"></div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="animeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalDescription"></div>
+        </div>
+    </div>
+
+    <script src="THT6.js"></script>
+</body>
+</html>
