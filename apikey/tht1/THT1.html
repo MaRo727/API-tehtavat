@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="THT1.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <input id="cityInput" type="text" placeholder="Enter city name" />
+        <button id="searchButton">Search</button>
+        <button id="currentLocationButton">Use Current Location</button>
+        <div id="locationOutput"></div>
+        <div id="error"></div>
+
+        <section id="currentWeather">
+            <h2>Current Weather</h2>
+            <div id="weatherInfo"></div>
+            <canvas id="weatherChart" width="400" height="200"></canvas>
+        </section>
+
+        <section id="forecast">
+            <h2>5-Day Forecast</h2>
+            <canvas id="forecastChart"></canvas>
+        </section>
+
+        <section id="airQuality">
+            <h2>Air Quality</h2>
+            <div id="aqiInfo"></div>
+        </section>
+
+        <section id="map">
+            <h2>Rain Map</h2>
+            <div id="mapContainer"></div>
+        </section>
+    </div>
+    <script src="THt1.js"></script>
+</body>
+</html>
